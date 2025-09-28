@@ -54,3 +54,33 @@
   font-size: 15px;
 
 }
+
+
+.story-section {
+    color: #000 !important;
+    text-decoration: none !important;
+    margin-top: 20px; /* ajoute 20px d'espace au-dessus */
+}
+
+
+.story-section a {
+    color: inherit;      /* Si jamais tu as un lien à l'intérieur */
+    text-decoration: none; /* retire le souligné */
+}
+.story-section,
+.story-section * {
+    color: #000 !important;           /* texte noir */
+    text-decoration: none !important; /* supprime le souligné */
+}
+
+
+.story-section strong,
+.story-section em {
+    color: #000;         /* force le noir pour gras et italique */
+    text-decoration: none;
+}
+
+.hero-job-guide__image-container:last-of-type {
+    margin-bottom: 20px;
+}
+

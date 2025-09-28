@@ -1,0 +1,66 @@
+
+.hero-job-guide__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.bloc__button__buy {
+  padding: 5px 10px;
+  margin-top: 15px;           /* espace au-dessus du bouton */
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: white;
+  font-weight: 600;
+  font-size: 150%;
+  color: black;
+  cursor: pointer;
+  width: auto;
+  max-width: 150%;
+
+  align-self: center;         /* centre le bouton dans le flex */
+}
+.bloc__button__buy:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.hero-job-content__guide {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Style du menu burger */
+#navbarToggleContent {
+  margin-top: 10px;
+}
+
+/* Liens du menu burger */
+#navbarToggleContent .menu-link {
+  display: block;
+  padding: 12px 15px;
+  color: white;                /* texte blanc */
+  text-decoration: none;       /* pas de souligné */
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* séparateur léger */
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dernier lien sans bordure */
+#navbarToggleContent .menu-link:last-child {
+  border-bottom: none;
+}
+
+/* Effet au survol */
+#navbarToggleContent .menu-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #84e2e2; /* ta couleur d’accent */
+}

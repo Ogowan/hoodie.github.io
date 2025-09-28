@@ -1,0 +1,56 @@
+.hero-job {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-job-content__guide {
+ 
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: none;
+}
+
+.hero-job-guide__image-container {
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(to left, #d3215f, #f0008a, #84e2e2, #31f701);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+ 
+  /* pour éviter qu'il grandisse trop */
+  box-sizing: border-box;
+}
+
+.hero-job-guide__image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  /* tu peux ajuster selon la taille que tu veux */
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+.hero-guide__secure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 5px;
+  border-radius: 36px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  text-align: center;
+  width: 80%;
+  font-size: 15px;
+
+}

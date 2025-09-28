@@ -1,0 +1,199 @@
+/* ===========================
+   STYLES GÉNÉRAUX (Mobile d'abord)
+   =========================== */
+.texte-sur-video {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.texte-sur-video p {
+  font-size: 12px; /* petit texte par défaut */
+  margin: 0;
+}
+
+.texte-sur-video h1 {
+  font-size: 18px; /* petit titre par défaut */
+  margin: 10px 0 0;
+}
+
+/* --- Navigation header --- */
+.header__nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 15px 25px;
+  background: linear-gradient(to left, #d3215f, #f0008a, rgb(132, 226, 226), #31f701);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: var(--roboto);
+  cursor: default;
+  -webkit-text-stroke: 1px black;
+}
+
+/* Menu central, recherche & icônes cachés par défaut */
+.header__nav-center,
+.hero-overview__search,
+.icon-buttons {
+  display: none !important;
+}
+
+/* Burger visible sur mobile */
+.header__menu-mobile {
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* --- Boutons du menu --- */
+.header__button {
+  padding: 9px 20px;
+  margin: 0 2px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: rgb(254, 255, 251);
+  font-weight: 700;
+  font-size: 22px;
+  cursor: pointer;
+}
+.header__button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  -webkit-text-stroke: 0.5px black;
+}
+
+/* --- Barre de recherche --- */
+.hero-overview__search {
+  position: relative;
+  right: 10%;
+  padding: 4px;
+  border-radius: 50px;
+  background: linear-gradient(to left, #d3215f, #f0008a, rgb(132, 226, 226), #31f701);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  width: auto;
+}
+.hero-overview__form {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: white;
+  border-radius: 40px;
+}
+.hero-overview__form input {
+  border: none;
+  outline: none;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 200px;
+  background-color: transparent;
+  font-family: var(--open-sans);
+}
+.hero-overview__form input::placeholder {
+  color: #888;
+}
+
+/* Icônes */
+.header__nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon-buttons {
+  margin-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+.search-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Bloc vidéo */
+.bloc {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.bloc video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.bloc .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* ===========================
+   TABLETTE (768px à 1024px)
+   =========================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .texte-sur-video p {
+    font-size: 30px;
+  }
+  .texte-sur-video h1 {
+    font-size: 45px;
+  }
+
+  .hero-job-content__guide {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ===========================
+   PC (>=1025px)
+   =========================== */
+@media (min-width: 1025px) {
+  /* Texte plus grand */
+  .texte-sur-video p {
+    font-size: 50px;
+  }
+  .texte-sur-video h1 {
+    font-size: 70px;
+  }
+
+  /* Affiche menu complet + recherche + icônes */
+  .header__nav-center,
+  .hero-overview__search,
+  .icon-buttons {
+    display: flex !important;
+    align-items: center;
+  }
+
+  /* Cache le burger */
+  .header__menu-mobile {
+    display: none !important;
+  }
+}

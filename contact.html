@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Photo/logo4.png" type="image/png">
+    <title>Hoodie Style.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-WOeW2F4CzA0g8hflb7C+M5vQ0PjqzjT8H7zv5ZlQz1F5z5qMRnqE8klT8bbKxL4K" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-1/assets/css/contact-1.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="header__nav">
+
+            <div class="header__nav-left">
+                <div class="header__logo">Hoodie Style.com</div>
+            </div>
+
+
+            <div class="header__nav-center">
+                <a href="index.html"><button class="header__button">Home</button></a>
+                <a href="men.html"><button class="header__button">Men</button></a>
+                <a href="women.html"><button class="header__button">Women</button></a>
+                <a href="contact.html"><button class="header__button">Contact</button></a>
+            </div>
+
+            <div class="header__nav-right">
+                <!-- Recherche -->
+                <div class="hero-overview__search">
+                    <form class="hero-overview__form" method="GET" action="Search.html">
+                        <input type="search" name="query" placeholder="Rechercher un Hoodie...">
+                        <button type="submit" class="search-button">
+                            <img src="Photo/loupe.png" alt="Rechercher" class="search-icon">
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Icônes séparées -->
+                <div class="icon-buttons">
+                    <button class="search-button">
+                        <img src="Photo/heart.png" alt="Favoris" class="search-icon">
+                    </button>
+                    <button class="search-button">
+                        <img src="Photo/basket.png" alt="Panier" class="search-icon">
+                    </button>
+                </div>
+                              <div class="header__menu-mobile">
+                    <section class="mb-3">
+                        <div class="header__menu-mobile d-lg-none"> 
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                    <!-- Bouton toggle -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarToggleContent" aria-controls="navbarToggleContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </nav>
+
+                            
+                            <div class="collapse" id="navbarToggleContent">
+                                <div class="bg-dark shadow p-4 rounded">
+                                    <a href="index.html" class="menu-link">Home</a>
+                                    <a href="men.html" class="menu-link">Men</a>
+                                    <a href="women.html" class="menu-link">Women</a>
+                                    <a href="contact.html" class="menu-link">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </div>
+
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+    
+    <section id="section1" class="hero-job">
+        <article>
+            
+            <div class="hero-job-content__guide">
+
+                <div class="bg-light py-3 py-md-5">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                                <h2 class="mb-4 display-5 text-center">Contact</h2>
+                                <p class="text-secondary mb-5 text-center">The best way to contact us is to use our
+                                    contact form below. Please fill out all of the required fields and we will get back
+                                    to you as soon as possible.</p>
+                                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-12 col-lg-9">
+                                <div class="bg-white border rounded shadow-sm overflow-hidden">
+                                    <form action="#!">
+                                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                            <div class="col-12">
+                                                <label for="fullname" class="form-label">Full Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="fullname" name="fullname"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Email <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                        value="" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-telephone"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                                        value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="message" class="form-label">Message <span
+                                                        class="text-danger">*</span></label>
+                                                <textarea class="form-control" id="message" name="message" rows="3"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+    </section>
+
+    <footer class="bg-dark text-light pt-5">
+        <div class="container px-5">
+            <div class="row gy-4 gx-5">
+                <!-- Colonne infos -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="fw-bold">Hoodie Style.com</h3>
+                    <p class="pt-2 mb-1">11 Rue Coustau 44000 Nantes.</p>
+                    <p class="mb-1">0987654321</p>
+                    <p>1234567890</p>
+                </div>
+
+                <!-- Menu -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4>Menu</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1"><a href="#">Home</a></li>
+                        <li class="py-1"><a href="#">Shorts</a></li>
+                        <li class="py-1"><a href="#">About</a></li>
+                        <li class="py-1"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- More -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4>More</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1"><a href="#">Landing Pages</a></li>
+                        <li class="py-1"><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h4>Categories</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1"><a href="#">Navbars</a></li>
+                        <li class="py-1"><a href="#">Cards</a></li>
+                        <li class="py-1"><a href="#">Buttons</a></li>
+                        <li class="py-1"><a href="#">Carousels</a></li>
+                    </ul>
+                </div>
+
+               <!-- Réseaux sociaux -->
+                <div class="col-12 col-md-6 col-lg-2 text-md-end">
+                    <h4>Social Media</h4>
+                    <div class="social-media pt-2">
+                        <a href="https://www.facebook.com/?locale=fr_FR" class="text-light fs-3 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/" class="text-light fs-3 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light fs-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+
+            <div class="d-sm-flex justify-content-between py-2">
+                <p class="mb-0">2025 © Nathan industry. All Rights Reserved.</p>
+                <p class="mb-0">
+                    <a href="#" class="pe-4">Terms of use</a>
+                    <a href="#">Privacy policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
